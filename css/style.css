@@ -1,0 +1,93 @@
+/* website defaults and font*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inconsolata;
+  color: white;
+}
+
+body {
+  margin: 0;
+  background: black;
+  text-align: center;
+}
+
+/* title of page */
+h1 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* language colors */
+.java {
+  color: #ec9f45;
+}
+
+.python {
+  color: #71b5f8;
+}
+
+.html_css_js {
+  color: #94e142;
+}
+
+/* flex structure for the projects section */
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+}
+
+table {
+  margin-top: 10px;
+  max-width: 600px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+th {
+  text-decoration: underline;
+}
+
+td {
+  padding-top: 5px;
+}
+
+/* class for each visible table row */
+.collapsible {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  background: none;
+  border-style: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+/* class for project description text that expands from previous table row */
+.content {
+  background-color: rgb(25, 25, 25);
+  padding: 10px;
+  max-width: 525px;
+  display: none;
+}
+
+/* flex structure for images within project descriptions */
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}

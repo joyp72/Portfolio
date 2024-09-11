@@ -1,0 +1,295 @@
+<!--
+File: index.html
+Created: 09/04/2024
+GUI Assignment: Creating Your First Web Page
+Joy Patel, UMass Lowell, joy_patel@student.uml.edu
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- intro section -->
+    <h1>Joy Patel</h1>
+    <h2>
+      I'm a senior at <a href="https://www.uml.edu/">UMass Lowell</a>
+    </h2>
+    <h2> 
+      who uses <span class="java">Java</span>, 
+      <span class="python">Python</span>, 
+      <span class="html_css_js">HTML/CSS/JS</span>, and 
+      <span style="color: yellow">others</span>.
+    </h2>
+
+    <!-- projects section -->
+    <div id="projects">
+      <h2>Projects</h2>
+
+      <table style="width: 100%">
+        <!-- table headers -->
+        <tr>
+          <th style="width: 25%">Title</th>
+          <th style="width: 25%">Last Updated</th>
+          <th style="width: 25%">Language</th>
+          <th style="width: 20%">LoC</th>
+          <th></th>
+        </tr>
+
+        <!-- Portfolio -->
+        <tr
+          id="portfolio"
+          class="collapsible"
+          onclick="collapsible('portfolio')"
+        >
+          <td>Portfolio</td>
+          <td>Sep 10, 2024</td>
+          <td><span class="html_css_js">HTML/CSS/JS</span></td>
+          <td>400?</td>
+          <td>
+            <button type="button">
+              <img src="images/down-arrow1.png" alt="down arrow">
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="content" colspan="5">
+            <p>
+              This website! It is the first assignment for my COMP 4610 GUI
+              Programming course. Here you can view informative reading about
+              some of the work I've done. It features different headings,
+              working links, tables, and images.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Secure Drop -->
+        <tr
+          id="secure_drop"
+          class="collapsible"
+          onclick="collapsible('secure_drop')"
+        >
+          <td>Secure Drop</td>
+          <td>Apr 28, 2024</td>
+          <td><span style="color: #71b5f8">Python</span></td>
+          <td style="padding-right: 0px">727</td>
+          <td style="padding-right: 0px">
+            <button type="button">
+              <img src="images/down-arrow1.png" alt="down arrow">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="content" colspan="5">
+            <p>
+              Secure Drop is a file transfer program that utilizes a
+              client-server model with a focus on confidentiality, integrity,
+              and availability. Users are able to register and add contacts
+              within a local network to communicate with. User data is hashed
+              using SHA-512 algorithm and checked for integrity upon each new
+              session. AES Symmetric and PKCS1_OAEP Asymmetric encryption is
+              used along with PKCS1_PSS signature scheme to provide secure data
+              transfer between contacts.
+            </p>
+            <div class="image_container">
+              <img style="width: 600px" src="images/secure_drop.png" alt="">
+            </div>
+          </td>
+        </tr>
+
+        <!-- Races -->
+        <tr id="races" class="collapsible" onclick="collapsible('races')">
+          <td>Races</td>
+          <td>Apr 01, 2024</td>
+          <td><span style="color: #ec9f45">Java</span></td>
+          <td>2.2k</td>
+          <td>
+            <button type="button">
+              <img src="images/down-arrow1.png" alt="down arrow">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="content" colspan="5">
+            <p>
+              Races is a Spigot plugin that aims to overhaul vanilla Minecraft
+              with RPG elements. Players can choose between different races such
+              as humans, dwarfs, angels, and more to gain passive abilities such
+              as night vision, absorption, fast digging, slow falling, etc. It
+              also comes with a token economy system that players can utilize to
+              switch between races. The plugin is fully customizable using
+              in-game commands or through the configuration file that is
+              generated upon initialization of the plugin on the server.
+            </p>
+            <div class="image_container">
+              <img style="width: 300px" src="images/races.png" alt="">
+              <img style="width: 200px" src="images/absorption.png" alt="">
+            </div>
+          </td>
+        </tr>
+
+        <!-- Gamba -->
+        <tr id="gamba" class="collapsible" onclick="collapsible('gamba')">
+          <td>Gamba</td>
+          <td>Sep 03, 2022</td>
+          <td><span style="color: #94e142">JavaScript</span></td>
+          <td style="padding-right: 0px">520</td>
+          <td style="padding-right: 0px">
+            <button type="button">
+              <img src="images/down-arrow1.png" alt="down arrow">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="content" colspan="5">
+            <p>
+              Gamba is a Discord bot that handles predictions. Admins are able
+              to setup a scenario question with a 'yes' or 'no' outcome for the
+              users to vote on. Users can bet coins on an outcome by reacting to
+              the prediction post with emojis that correlate with their
+              prediction.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Art Portfolio -->
+        <tr
+          id="art_portfolio"
+          class="collapsible"
+          onclick="collapsible('art_portfolio')"
+        >
+          <td>Art Portfolio</td>
+          <td>Aug 27, 2022</td>
+          <td><span style="color: #94e142">HTML/CSS/JS</span></td>
+          <td style="padding-right: 0px">1.7k</td>
+          <td style="padding-right: 0px">
+            <button type="button">
+              <img src="images/down-arrow1.png" alt="down arrow">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="content" colspan="5">
+            <p>
+              My first website project showcasing my mom's art. Features a side
+              bar, horizontal scrollbar, scroll animations, and more.
+            </p>
+          </td>
+        </tr>
+
+        <!-- New Build -->
+        <tr
+          id="new_build"
+          class="collapsible"
+          onclick="collapsible('new_build')"
+        >
+          <td>New Build</td>
+          <td>Jan 22, 2018</td>
+          <td><span style="color: #ec9f45">Java</span></td>
+          <td style="padding-right: 0px">8.5k</td>
+          <td style="padding-right: 0px">
+            <button type="button">
+              <img src="images/down-arrow1.png" alt="down arrow">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="content" colspan="5">
+            <p>
+              New build is a 'guess the build' mini-game for Minecraft Spigot
+              servers. A player is chosen at random and is tasked to build
+              something resembling a given word. Points are awarded to the
+              builder and the guessers who are able to correctly identify the
+              word. The game ends after all rounds have concluded and the player
+              with the most points is crowned as the winner. Winners are given
+              tokens that can be redeemed for cosmetic effects within the
+              mini-game.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Missions -->
+        <tr id="missions" class="collapsible" onclick="collapsible('missions')">
+          <td>Missions</td>
+          <td>Jan 07, 2018</td>
+          <td><span style="color: #ec9f45">Java</span></td>
+          <td style="padding-right: 0px">9.1k</td>
+          <td style="padding-right: 0px">
+            <button type="button">
+              <img src="images/down-arrow1.png" alt="down arrow">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="content" colspan="5">
+            <p>
+              Missions is a Spigot plugin that introduces story based levels
+              with a focus on custom monsters and boss type enemies. Players are
+              tasked to defeat an evil scientist that has gone mad. During this
+              journey, the players will face a variety of puzzles while making
+              their way up the scientist's tower. Once atop, players must find a
+              way to penetrate the invincible shield guarding the scientist who
+              will rain missiles upon them.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Elimination -->
+        <tr
+          id="elimination"
+          class="collapsible"
+          onclick="collapsible('elimination')"
+        >
+          <td>Elimination</td>
+          <td>Dec 03, 2017</td>
+          <td><span style="color: #ec9f45">Java</span></td>
+          <td style="padding-right: 0px">6.0k</td>
+          <td style="padding-right: 0px">
+            <button type="button">
+              <img src="images/down-arrow1.png" alt="down arrow">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="content" colspan="5">
+            <p>
+              Elimination is a PvP mini-game designed for Minecraft servers
+              using Spigot. Two teams of three players fight against one another
+              in an arena to win five rounds in total. Players that are
+              eliminated in a given round are able to be revived by their
+              teammates upon crouching at the location of their death without
+              being interrupted. A round is concluded upon the death of an
+              entire team or at the end of the timer, whichever comes first. If
+              the round is ended in result of the timer, the team with the most
+              members alive is awarded the round win.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- outro section -->
+    <div id="footer" style="margin-top: 20px">
+      <h2>
+        Check out these projects on my <a href="https://github.com/joyp72">GitHub</a>.
+      </h2>
+      <h2 style="margin-top: 30px">
+        You can also find me on: <br>
+        <a href="https://discord.com/">Discord</a>,
+        <a href="https://www.youtube.com/channel/UCCrK4DWMNO722FAc8BDHVBA">YouTube</a>,
+        <a href="https://steamcommunity.com/profiles/76561199091887049">Steam</a>, and
+        <a href="https://www.instagram.com/joyp72/">Instagram</a>
+      </h2>
+    </div>
+    
+    <script src="js/index.js"></script>
+  </body>
+</html>
